@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 2 * np.pi, 400)
+y_sin = np.sin(x)
+y_cos = np.cos(x)
+fig, axs = plt.subplots(1, 2, figsize=(10, 4))
+axs[0].plot(x, y_sin, 'b-')
+axs[0].set_title('Sine Wave')
+axs[0].set_xlabel('X values')
+axs[0].set_ylabel('sin(x)')
+axs[1].plot(x, y_cos, 'r--')
+axs[1].set_title('Cosine Wave')
+axs[1].set_xlabel('X values')
+axs[1].set_ylabel('cos(x)')
+plt.tight_layout()
+plt.show()

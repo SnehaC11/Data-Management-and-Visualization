@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np
+points = int(input("How many points? "))
+color_sin = input("Sine color (e.g., blue): ")
+color_cos = input("Cosine color (e.g., red): ")
+x = np.linspace(0, 2 * np.pi, points)
+y1 = np.sin(x)
+y2 = np.cos(x)
+plt.subplot(1, 2, 1)
+plt.plot(x, y1, color=color_sin)
+plt.title("Sine")
+plt.subplot(1, 2, 2)
+plt.plot(x, y2, color=color_cos)
+plt.title("Cosine")
+plt.show()
